@@ -10,7 +10,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace IMDBApi.Controllers
 {
-    
+    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class AuthController : ControllerBase

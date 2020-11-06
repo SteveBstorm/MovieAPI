@@ -53,6 +53,7 @@ namespace IMDBApi
             services.AddScoped<ICommentService<Comment>, CommentService>();
             #endregion
 
+            
 
             #region ConfigSwagger
             services.AddSwaggerGen(c => 
@@ -73,7 +74,6 @@ namespace IMDBApi
                 });
             });
             #endregion
-
 
             #region Config JWToken
             //Récupération de la clé "secret"
@@ -104,6 +104,8 @@ namespace IMDBApi
             services.AddScoped<ITokenService, TokenService>();
 
             #endregion
+
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
