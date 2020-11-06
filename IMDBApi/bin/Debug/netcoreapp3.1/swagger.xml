@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>IMDBApi</name>
+    </assembly>
+    <members>
+        <member name="M:IMDBApi.Controllers.MovieController.Get">
+            <summary>
+            Récupération de la liste complète de Movie
+            </summary>
+            <response code="200">Renvoi la liste complète des Movie</response>
+            <response code="400">Une erreur côté serveur</response>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
