@@ -12,5 +12,6 @@ namespace LocalModel.Services.Interface
         CompletePerson GetComplete(int Id);
         Person GetOne(int Id);
         void Update(Person p);
+        void SetAsActor(int movieId, int personId, string Role);
     }
 }

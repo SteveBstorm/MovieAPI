@@ -20,6 +20,8 @@ using IMDBApi.Services;
 using System.Text;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
+using Microsoft.AspNetCore.Identity;
+using System.Security.Claims;
 
 namespace IMDBApi
 {
@@ -84,6 +86,14 @@ namespace IMDBApi
 
             AppSettings appSettings = monSecret.Get<AppSettings>();
             byte[] key = Encoding.ASCII.GetBytes(appSettings.Secret);
+
+            //Définition des autorisations selon les rôles
+            services.AddAuthorization(options =>
+            {
+                options.AddPolicy("Admin", policy => policy.RequireRole("Admin"));
+                options.AddPolicy("User", policy => policy.RequireRole("User", "Admin"));
+            });
+            
             services.AddAuthentication(x =>
             {
                 x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;

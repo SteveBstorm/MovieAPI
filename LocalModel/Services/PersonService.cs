@@ -59,6 +59,10 @@ namespace LocalModel.Services
             _repo.Update(p.toDal());
         }
 
+        public void SetAsActor(int movieId, int personId, string Role)
+        {
+            _repo.SetAsActor(movieId, personId, Role);
+        }
 
     }
 }

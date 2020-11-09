@@ -98,5 +98,14 @@ namespace DAL.Repository
 
             _connection.ExecuteNonQuery(cmd);
         }
+
+        public void SetAdmin(int Id)
+        {
+            string Query = "UPDATE [User] SET IsAdmin = @isAdmin WHERE Id = @id";
+            Command cmd = new Command(Query);
+            cmd.AddParameter("isAdmin", GetOne(Id).IsAdmin ? 0 : 1);
+            cmd.AddParameter("Id", Id);
+            _connection.ExecuteNonQuery(cmd);
+        }
     }
 }

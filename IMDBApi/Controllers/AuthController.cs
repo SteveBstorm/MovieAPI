@@ -10,7 +10,6 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace IMDBApi.Controllers
 {
-    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class AuthController : ControllerBase
@@ -22,7 +21,11 @@ namespace IMDBApi.Controllers
             _tokenService = tokenService;
         }
 
-        [AllowAnonymous]
+        /// <summary>
+        /// Retourne un token sur base d'un model loginInfo
+        /// </summary>
+        /// <param name="model">LoginInfo</param>
+        /// <returns>UserWithToken</returns>
         [HttpPost("auth")]
         public IActionResult Auth([FromBody]LoginInfo model)
         {
@@ -36,10 +39,5 @@ namespace IMDBApi.Controllers
             return Ok(user);
         }
 
-        [HttpGet]
-        public IActionResult test()
-        {
-            return Ok("c'est passé");
-        }
     }
 }

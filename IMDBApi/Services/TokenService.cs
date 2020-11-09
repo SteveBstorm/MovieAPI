@@ -18,7 +18,7 @@ namespace IMDBApi.Services
     public class TokenService : ITokenService
     {
 
-        private List<User> _users;
+       // private List<User> _users;
         private readonly AppSettings _appSettings;
         private IUserService _userService;
 
@@ -27,14 +27,21 @@ namespace IMDBApi.Services
             _appSettings = app.Value;
             _userService = userService;
 
-            _users = _userService.GetAll().ToList();
+           // _users = _userService.GetAll().ToList();
         }
 
         public UserWithToken Authenticate(string email, string password)
         {
-            User user = _users.SingleOrDefault(x => x.Email == email && x.Password == password);
+            User user;
+            if (_userService.CheckUser(new User { Email = email, Password = password }) == true)
+            {
+                user = _userService.GetByMail(email);
+                //user = _users.SingleOrDefault(x => x.Email == email && x.Password == password);
+            }
+            else return null;
+            
 
-            if (user == null) return null;
+            //if (user == null) return null;
 
             JwtSecurityTokenHandler tokenHandler = new JwtSecurityTokenHandler();
             byte[] key = Encoding.ASCII.GetBytes(_appSettings.Secret);

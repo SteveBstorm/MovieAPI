@@ -10,5 +10,8 @@ namespace LocalModel.Services.Interface
         User GetByMail(string Email);
         User GetOne(int Id);
         void Register(User user);
+        void Switchactivate(int Id);
+        void Update(User u);
+        void SwitchAdmin(int Id);
     }
 }

@@ -140,6 +140,23 @@ namespace DAL.Repository
             }
         }
 
+        public void SetAsActor(int movieId, int personId, string Role)
+        {
+            using (SqlConnection c = Connection())
+            {
+                c.Open();
+                using (SqlCommand cmd = c.CreateCommand())
+                {
+                    cmd.CommandText = "INSERT INTO Actor VALUES(@pId, @mId, @role)";
+                    cmd.Parameters.AddWithValue("pId", personId);
+                    cmd.Parameters.AddWithValue("mId", movieId);
+                    cmd.Parameters.AddWithValue("role", Role);
+
+                    cmd.ExecuteNonQuery();
+                }
+            }
+        }
+
 
     }
 }

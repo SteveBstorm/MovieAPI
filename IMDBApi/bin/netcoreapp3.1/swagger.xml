@@ -4,13 +4,60 @@
         <name>IMDBApi</name>
     </assembly>
     <members>
+        <member name="M:IMDBApi.Controllers.AuthController.Auth(IMDBApi.Models.LoginInfo)">
+            <summary>
+            Retourne un token sur base d'un model loginInfo
+            </summary>
+            <param name="model">LoginInfo</param>
+            <returns>UserWithToken</returns>
+        </member>
         <member name="M:IMDBApi.Controllers.MovieController.Get">
             <summary>
             Récupération de la liste complète de Movie
             </summary>
-            <response code="200">Renvoi la liste complète des Movie</response>
+            <response code="200">Renvoi la liste des Movie</response>
             <response code="400">Une erreur côté serveur</response>
-            <returns></returns>
+            <returns>IEnumerable de movie avec liste des acteurs, scénariste et réal</returns>
+            <remarks>Accessible à tout le monde</remarks>
+        </member>
+        <member name="M:IMDBApi.Controllers.MovieController.Get(System.Int32)">
+            <summary>
+            Retourne un film sur base de son Id
+            Parametre de type entier
+            </summary>
+            <response code="200">Renvoi un Movie</response>
+            <response code="400">Une erreur côté serveur</response>
+            <returns>Objet de type movie</returns>
+            <remarks>Accessible aux Users connecté</remarks>
+        </member>
+        <member name="M:IMDBApi.Controllers.MovieController.Post(LocalModel.Models.MovieToDal)">
+            <summary>
+            Permet d'enregistrer un Movie
+            Nécéssite un model MovieToDal
+            </summary>
+            <response code="200">Création ok</response>
+            <response code="400">Une erreur côté serveur</response>
+            <returns>Un message en cas d'erreur</returns>
+            <remarks>Accessible au role Admin</remarks>
+        </member>
+        <member name="M:IMDBApi.Controllers.MovieController.Put(LocalModel.Models.MovieToDal)">
+            <summary>
+            Permet de mettre à jour un Movie sur base de son ID
+            Nécéssite un model MovieToDal
+            </summary>
+            <response code="200">Mise à jour ok</response>
+            <response code="400">Une erreur côté serveur</response>
+            <returns>Un message en cas d'erreur</returns>
+            <remarks>Accessible au role Admin</remarks>
+        </member>
+        <member name="M:IMDBApi.Controllers.MovieController.Delete(System.Int32)">
+            <summary>
+            Permet de supprimer un Movie sur base de son ID
+            </summary>
+            <response code="200">Suppression ok</response>
+            <response code="400">Une erreur côté serveur</response>
+            <returns>Un message en cas d'erreur</returns>
+            <remarks>Accessible au role Admin</remarks>
         </member>
     </members>
 </doc>

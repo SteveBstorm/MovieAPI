@@ -12,5 +12,6 @@ namespace DAL.Interface
         void Update(Person c);
         bool Delete(int Id);
         IEnumerable<ActIn> GetMovieByPersonId(int Id);
+        void SetAsActor(int movieId, int personId, string Role);
     }
 }

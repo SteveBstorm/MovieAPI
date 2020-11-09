@@ -13,6 +13,7 @@ namespace DAL.Interface
         bool Delete(int Id);
         bool? CheckUser(User u);
         User GetByEmail(string email);
+        void SetAdmin(int Id);
     }
 }
 
