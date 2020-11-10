@@ -26,8 +26,18 @@ namespace DAL.Repository
             cmd.AddParameter("email", u.Email);
             cmd.AddParameter("pass", u.Password);
 
-
-            int Id = (int)_connection.ExecuteScalar(cmd);
+            int Id;
+            try
+            {
+               Id = (int)_connection.ExecuteScalar(cmd);
+            }
+            catch(Exception e)
+            {
+                Id = 0;
+                throw new Exception(e.Message);
+            }
+               
+            
            
             if(Id > 0)
             {

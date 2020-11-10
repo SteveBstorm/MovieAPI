@@ -207,7 +207,7 @@ namespace DAL.Repository
                 using (SqlCommand cmd = c.CreateCommand())
                 {
 
-                    cmd.CommandText = $"SELECT a.Role, p.LastName, p.FirstName FROM Person p JOIN Actor a ON a.PersonID = p.Id WHERE a.MovieID = @id ";
+                    cmd.CommandText = $"SELECT a.Role, p.LastName, p.FirstName, a.PersonID FROM Person p JOIN Actor a ON a.PersonID = p.Id WHERE a.MovieID = @id ";
                     cmd.Parameters.AddWithValue("id", Id);
                     using (SqlDataReader reader = cmd.ExecuteReader())
                     {
@@ -215,6 +215,7 @@ namespace DAL.Repository
                         {
                             yield return new Actor
                             {
+                                Id = (int)reader["PersonID"],
                                 Role = reader["Role"].ToString(),
                                 LastName = reader["LastName"].ToString(),
                                 FirstName = reader["FirstName"].ToString()

@@ -83,6 +83,7 @@ namespace LocalModel.Tools
         {
             return new local.Actor
             {
+                Id = a.Id,   
                 Role = a.Role,
                 LastName = a.LastName,
                 FirstName = a.FirstName
@@ -94,7 +95,8 @@ namespace LocalModel.Tools
             return new local.ActIn
             {
                 Role = a.Role,
-                MovieTitle = a.MovieTitle
+                MovieTitle = a.MovieTitle,
+                MovieID = a.MovieId
             };
         }
 
@@ -128,5 +130,27 @@ namespace LocalModel.Tools
             };
         }
 
+        public static local.Comment toLocal(this dal.Comment c)
+        {
+            return new local.Comment
+            {
+                Id = c.Id,
+                Content = c.Content,
+                PostDate = c.PostDate,
+                MovieID = c.MovieID,
+                UserID = c.UserID
+            };
+        }
+        public static dal.Comment toDal(this local.Comment c)
+        {
+            return new dal.Comment
+            {
+                Id = c.Id,
+                Content = c.Content,
+                PostDate = c.PostDate,
+                MovieID = c.MovieID,
+                UserID = c.UserID
+            };
+        }
     }
 }

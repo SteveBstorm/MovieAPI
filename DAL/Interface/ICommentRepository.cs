@@ -11,5 +11,6 @@ namespace DAL.Interface
         void Insert(Comment u);
         void Update(Comment u);
         bool Delete(int Id);
+        IEnumerable<Comment> GetByMovieId(int Id);
     }
 }

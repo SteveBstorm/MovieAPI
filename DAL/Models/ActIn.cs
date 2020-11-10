@@ -8,5 +8,6 @@ namespace DAL.Models
     {
         public string Role { get; set; }
         public string MovieTitle { get; set; }
+        public int MovieId { get; set; }
     }
 }

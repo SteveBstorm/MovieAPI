@@ -39,7 +39,7 @@ namespace DAL.Repository
 
         public void Insert(Comment u)
         {
-            string Query = "INSERT INTO Comment VALUES(@Content, @Post, @userID, @movieID)";
+            string Query = "INSERT INTO Comment (Content, PostDate, UserID, MovieID) VALUES(@Content, @Post, @userID, @movieID)";
             Command cmd = new Command(Query);
             cmd.AddParameter("Content", u.Content);
             cmd.AddParameter("Post", u.PostDate);
@@ -60,6 +60,15 @@ namespace DAL.Repository
             cmd.AddParameter("Id", u.Id);
 
             _connection.ExecuteNonQuery(cmd);
+        }
+
+        public IEnumerable<Comment> GetByMovieId(int Id)
+        {
+            string Query = "SELECT * FROM Comment WHERE MovieID = @Id";
+            Command cmd = new Command(Query);
+            cmd.AddParameter("Id", Id);
+
+            return _connection.ExecuteReader<Comment>(cmd);
         }
     }
 }
