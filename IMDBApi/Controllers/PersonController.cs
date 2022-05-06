@@ -28,14 +28,24 @@ namespace IMDBApi.Controllers
         {
             return Ok(_personService.GetAll());
         }
-
+        /// <summary>
+        /// Détail d'une personne
+        /// </summary>
+        /// <response code="200">Renvoi le détail d'une personne ainsi que sa filmographie</response>
+        /// <response code="400">Une erreur côté serveur</response>
+        /// <remarks>Accessible si connecté</remarks>
         [Authorize("User")]
         [HttpGet("{Id}")]
         public IActionResult Get(int Id)
         {
             return Ok(_personService.GetComplete(Id));
         }
-
+        /// <summary>
+        /// Enregistrement d'une personne sur base d'un model Person
+        /// </summary>
+        /// <response code="200"></response>
+        /// <response code="400">Une erreur côté serveur</response>
+        /// <remarks>Accessible si role Admin</remarks>
         [Authorize("Admin")]
         [HttpPost]
         public IActionResult Post(Person p)
@@ -43,7 +53,12 @@ namespace IMDBApi.Controllers
             _personService.Create(p.toLocal());
             return Ok();
         }
-
+        /// <summary>
+        /// Définit uen personne acteur d'un film sur base d'un model Actor
+        /// </summary>
+        /// <response code="200"></response>
+        /// <response code="400">Une erreur côté serveur</response>
+        /// <remarks>Accessible si role Admin</remarks>
         [Authorize("Admin")]
         [HttpPost("setActor")]
         public IActionResult Post(Actor a)

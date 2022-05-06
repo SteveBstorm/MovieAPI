@@ -1,0 +1,9 @@
+C:\Users\Steve\source\repos\IMDBApi\ADOToolbox\bin\Release\netcoreapp3.1\ADOToolbox.deps.json
+C:\Users\Steve\source\repos\IMDBApi\ADOToolbox\bin\Release\netcoreapp3.1\ADOToolbox.dll
+C:\Users\Steve\source\repos\IMDBApi\ADOToolbox\bin\Release\netcoreapp3.1\ADOToolbox.pdb
+C:\Users\Steve\source\repos\IMDBApi\ADOToolbox\obj\Release\netcoreapp3.1\ADOToolbox.csprojAssemblyReference.cache
+C:\Users\Steve\source\repos\IMDBApi\ADOToolbox\obj\Release\netcoreapp3.1\ADOToolbox.AssemblyInfoInputs.cache
+C:\Users\Steve\source\repos\IMDBApi\ADOToolbox\obj\Release\netcoreapp3.1\ADOToolbox.AssemblyInfo.cs
+C:\Users\Steve\source\repos\IMDBApi\ADOToolbox\obj\Release\netcoreapp3.1\ADOToolbox.csproj.CoreCompileInputs.cache
+C:\Users\Steve\source\repos\IMDBApi\ADOToolbox\obj\Release\netcoreapp3.1\ADOToolbox.dll
+C:\Users\Steve\source\repos\IMDBApi\ADOToolbox\obj\Release\netcoreapp3.1\ADOToolbox.pdb

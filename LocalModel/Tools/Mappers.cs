@@ -66,7 +66,7 @@ namespace LocalModel.Tools
 
     
 
-        public static dal.Movie toDal(this local.MovieToDal m)
+        public static dal.Movie toDal(this local.NewMovie m)
         {
             return new dal.Movie
             {

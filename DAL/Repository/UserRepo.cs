@@ -13,10 +13,9 @@ namespace DAL.Repository
 {
     public class UserRepo : BaseRepository, IUserRepository<User>
     {
-        
+
         public UserRepo(IConfiguration config): base(config)
         {
-           
         }
 
         public bool? CheckUser(User u)

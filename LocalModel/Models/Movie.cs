@@ -1,4 +1,6 @@
-﻿using System;
+﻿using DAL.Interface;
+using DAL.Repository;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Text;

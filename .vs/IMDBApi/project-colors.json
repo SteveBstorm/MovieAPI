@@ -1,0 +1,21 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "8a6c20e9-a83d-4e17-9536-486408faf038": {
+      "ProjectGuid": "8a6c20e9-a83d-4e17-9536-486408faf038",
+      "DisplayName": "IMDBApi",
+      "ColorIndex": 0
+    },
+    "7a40a393-3464-4802-842a-137f1c045925": {
+      "ProjectGuid": "7a40a393-3464-4802-842a-137f1c045925",
+      "DisplayName": "LocalModel",
+      "ColorIndex": 1
+    },
+    "c38c63c2-100e-41e4-904d-a0c83866ad97": {
+      "ProjectGuid": "c38c63c2-100e-41e4-904d-a0c83866ad97",
+      "DisplayName": "MovieDB",
+      "ColorIndex": 2
+    }
+  },
+  "NextColorIndex": 3
+}

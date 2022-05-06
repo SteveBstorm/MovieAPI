@@ -29,14 +29,14 @@ namespace LocalModel.Services
             _movieRepo.Delete(Id);
         }
 
-        public void Update(MovieToDal m)
+        public void Update(NewMovie m)
         {
             _movieRepo.Update(m.toDal());
         }
 
-        public void Create(MovieToDal m)
+        public int Create(NewMovie m)
         {
-            _movieRepo.Insert(m.toDal());
+            return _movieRepo.Insert(m.toDal());
         }
 
         public local.Movie GetOne(int Id)

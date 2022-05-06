@@ -29,14 +29,14 @@ namespace IMDBApi.Controllers
         [HttpPost("auth")]
         public IActionResult Auth([FromBody]LoginInfo model)
         {
-            UserWithToken user;
+            ConnectedUser user;
             try
             {
                 user = _tokenService.Authenticate(model.Email, model.Password);
             }
             catch(Exception e)
             {
-                return BadRequest("Utilisateur inexistant");
+                return BadRequest("Email ou password incorrect");
             }
             
 

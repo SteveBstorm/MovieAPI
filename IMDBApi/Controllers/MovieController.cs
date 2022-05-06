@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using LocalModel.Models;
@@ -74,12 +75,12 @@ namespace IMDBApi.Controllers
         /// <remarks>Accessible au role Admin</remarks>
         [Authorize("Admin")]
         [HttpPost]
-        public IActionResult Post([FromBody]MovieToDal m)
+        public IActionResult Post([FromBody]NewMovie m)
         {
             try
             {
-                _movieService.Create(m);
-                return Ok();
+                int test = _movieService.Create(m);
+                return Ok(test);
             }
             catch(Exception e)
             {
@@ -98,7 +99,7 @@ namespace IMDBApi.Controllers
         /// <remarks>Accessible au role Admin</remarks>
         [Authorize("Admin")]
         [HttpPut]
-        public IActionResult Put([FromBody]MovieToDal m)
+        public IActionResult Put([FromBody]NewMovie m)
         {
             try
             {
@@ -132,5 +133,24 @@ namespace IMDBApi.Controllers
                 return BadRequest(e.Message);
             }
         }
+
+        //[AllowAnonymous]
+        //[HttpPost("upfile")]
+        //public async Task<IActionResult> UploadImage()
+        //{
+            
+        //    HttpRequest req = HttpContext.Request;
+        //    string imageName = req.Form.Files[0].FileName;
+        //    if (!Directory.Exists("test")) Directory.CreateDirectory("test"); 
+
+        //    using (FileStream fs = new FileStream(Path.Combine(Directory.GetCurrentDirectory(), "image/", imageName), FileMode.Create))
+        //    {
+        //        await req.Form.Files[0].CopyToAsync(fs);
+
+
+        //        return this.StatusCode(200, "http://localhost:53448/image/"+req.Form.Files[0].FileName);
+        //    }
+
+        //}
     }
 }

@@ -1,0 +1,12 @@
+C:\Users\Steve\source\repos\IMDBApi\DAL\bin\Release\netcoreapp3.1\DAL.deps.json
+C:\Users\Steve\source\repos\IMDBApi\DAL\bin\Release\netcoreapp3.1\DAL.dll
+C:\Users\Steve\source\repos\IMDBApi\DAL\bin\Release\netcoreapp3.1\DAL.pdb
+C:\Users\Steve\source\repos\IMDBApi\DAL\bin\Release\netcoreapp3.1\ADOToolbox.dll
+C:\Users\Steve\source\repos\IMDBApi\DAL\bin\Release\netcoreapp3.1\ADOToolbox.pdb
+C:\Users\Steve\source\repos\IMDBApi\DAL\obj\Release\netcoreapp3.1\DAL.csprojAssemblyReference.cache
+C:\Users\Steve\source\repos\IMDBApi\DAL\obj\Release\netcoreapp3.1\DAL.AssemblyInfoInputs.cache
+C:\Users\Steve\source\repos\IMDBApi\DAL\obj\Release\netcoreapp3.1\DAL.AssemblyInfo.cs
+C:\Users\Steve\source\repos\IMDBApi\DAL\obj\Release\netcoreapp3.1\DAL.csproj.CoreCompileInputs.cache
+C:\Users\Steve\source\repos\IMDBApi\DAL\obj\Release\netcoreapp3.1\DAL.csproj.CopyComplete
+C:\Users\Steve\source\repos\IMDBApi\DAL\obj\Release\netcoreapp3.1\DAL.dll
+C:\Users\Steve\source\repos\IMDBApi\DAL\obj\Release\netcoreapp3.1\DAL.pdb

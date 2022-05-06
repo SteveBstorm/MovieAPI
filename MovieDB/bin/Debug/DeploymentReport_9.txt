@@ -1,0 +1,29 @@
+﻿** Met en surbrillance
+     Tables à reconstruire
+       Aucun
+     Index ordonnés en clusters à supprimer
+       Aucun
+     Index ordonnés en clusters à créer.
+       Aucun
+     Problèmes de données possibles
+       Aucun
+
+** Actions de l'utilisateur
+     Créer
+       [dbo].[Actor] (Table)
+       [dbo].[Comment] (Table)
+       [dbo].[Movie] (Table)
+       [dbo].[Person] (Table)
+       [dbo].[User] (Table)
+       Contrainte par défaut: contrainte sans nom sur [dbo].[User] (Contrainte par défaut)
+       Contrainte par défaut: contrainte sans nom sur [dbo].[User] (Contrainte par défaut)
+       [dbo].[FK_Person_Actor] (Clé étrangère)
+       [dbo].[FK_Person_Movie] (Clé étrangère)
+       [dbo].[FK_COMMENT_MOVIE] (Clé étrangère)
+       [dbo].[FK_COMMENT_USER] (Clé étrangère)
+       [dbo].[FK_Realistor] (Clé étrangère)
+       [dbo].[FK_Scenarist] (Clé étrangère)
+       [dbo].[UserSoftDelete] (Déclencheur)
+       [dbo].[DeletePerson] (Procédure)
+
+** Actions de support

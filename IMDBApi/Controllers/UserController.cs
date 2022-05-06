@@ -38,7 +38,12 @@ namespace IMDBApi.Controllers
                 return BadRequest(e.Message);
             }
         }
-
+        /// <summary>
+        /// Retourne la liste des Utilisateurs
+        /// </summary>
+        /// <response code="200"></response>
+        /// <response code="400">Une erreur côté serveur</response>
+        /// <remarks>Accessible si role Admin</remarks>
         [Authorize("Admin")]
         [HttpGet]
         public IActionResult Get()
@@ -51,7 +56,13 @@ namespace IMDBApi.Controllers
                 return BadRequest(e.Message);
             }
         }
-        [Authorize("Admin")]
+        /// <summary>
+        /// Retourne un profil utilisateur
+        /// </summary>
+        /// <response code="200"></response>
+        /// <response code="400">Une erreur côté serveur</response>
+        /// <remarks>Accessible si connecté</remarks>
+        [Authorize("User")]
         [HttpGet("{Id}")]
         public IActionResult Get(int Id)
         {
@@ -64,7 +75,12 @@ namespace IMDBApi.Controllers
                 return BadRequest(e.Message);
             }
         }
-
+        /// <summary>
+        /// Supprime un utilisateur (soft delete)
+        /// </summary>
+        /// <response code="200"></response>
+        /// <response code="400">Une erreur côté serveur</response>
+        /// <remarks>Accessible si role Admin</remarks>
         [Authorize("Admin")]
         [HttpDelete]
         public IActionResult Delete(int Id)
@@ -80,6 +96,12 @@ namespace IMDBApi.Controllers
             }
         }
 
+        /// <summary>
+        /// Mise à jour du profil utilisateur
+        /// </summary>
+        /// <response code="200"></response>
+        /// <response code="400">Une erreur côté serveur</response>
+        /// <remarks>Accessible si connecté</remarks>
         [Authorize("User")]
         [HttpPut]
         public IActionResult Update(User u)
@@ -94,9 +116,14 @@ namespace IMDBApi.Controllers
                 return BadRequest(e.Message);
             }
         }
-
+        /// <summary>
+        /// Définit un utilisateur comme administrateur ou l'inverse
+        /// </summary>
+        /// <response code="200"></response>
+        /// <response code="400">Une erreur côté serveur</response>
+        /// <remarks>Accessible si role Admin</remarks>
         [Authorize("Admin")]
-        [HttpPut("{Id}")]
+        [HttpPut("/setAdmin/{Id}")]
         public IActionResult SwitchAdmin(int Id)
         {
             try

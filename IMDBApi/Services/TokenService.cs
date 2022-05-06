@@ -30,7 +30,7 @@ namespace IMDBApi.Services
            // _users = _userService.GetAll().ToList();
         }
 
-        public UserWithToken Authenticate(string email, string password)
+        public ConnectedUser Authenticate(string email, string password)
         {
             User user;
             if (_userService.CheckUser(new User { Email = email, Password = password }) == true)
@@ -53,13 +53,14 @@ namespace IMDBApi.Services
                     new Claim(ClaimTypes.Name, user.Id.ToString()),
                     new Claim(ClaimTypes.Role, user.IsAdmin ? "Admin" : "User")
                 }),
+                Issuer = _appSettings.Issuer,
                 Expires = DateTime.Now.AddDays(1),
                 SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)
             };
 
             SecurityToken token = tokenHandler.CreateToken(tokenDescriptor);
 
-            return new UserWithToken
+            return new ConnectedUser
             {
                 Id = user.Id,
                 Email = user.Email,

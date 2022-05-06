@@ -12,7 +12,7 @@ namespace DAL.Interface
         IEnumerable<Movie> GetByRealisatorId(int Id);
         IEnumerable<Movie> GetByScenaristId(int Id);
         Movie GetOne(int Id);
-        void Insert(Movie m);
+        int Insert(Movie m);
         void SetAsActor(int MovieId, int PersonId, string Role);
         void Update(Movie m);
     }

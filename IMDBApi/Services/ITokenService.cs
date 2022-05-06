@@ -4,6 +4,6 @@ namespace IMDBApi.Services
 {
     public interface ITokenService
     {
-        UserWithToken Authenticate(string email, string password);
+        ConnectedUser Authenticate(string email, string password);
     }
 }

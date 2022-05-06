@@ -12,7 +12,6 @@ C:\Users\Steve\source\Correctifs\CorrectifIMDB\AspIMDB\LocalModel\obj\Debug\netc
 C:\Users\Steve\source\Correctifs\CorrectifIMDB\AspIMDB\LocalModel\obj\Debug\netcoreapp3.1\LocalModel.pdb
 C:\Users\Steve\source\Correctifs\CorrectifIMDB\AspIMDB\LocalModel\bin\Debug\netcoreapp3.1\ADOToolbox.dll
 C:\Users\Steve\source\Correctifs\CorrectifIMDB\AspIMDB\LocalModel\bin\Debug\netcoreapp3.1\ADOToolbox.pdb
-C:\Users\Steve\source\repos\IMDBApi\LocalModel\obj\Debug\netcoreapp3.1\LocalModel.csprojAssemblyReference.cache
 C:\Users\Steve\source\repos\IMDBApi\LocalModel\obj\Debug\netcoreapp3.1\LocalModel.csproj.CoreCompileInputs.cache
 C:\Users\Steve\source\repos\IMDBApi\LocalModel\obj\Debug\netcoreapp3.1\LocalModel.AssemblyInfoInputs.cache
 C:\Users\Steve\source\repos\IMDBApi\LocalModel\obj\Debug\netcoreapp3.1\LocalModel.AssemblyInfo.cs
@@ -26,3 +25,19 @@ C:\Users\Steve\source\repos\IMDBApi\LocalModel\bin\Debug\netcoreapp3.1\DAL.dll
 C:\Users\Steve\source\repos\IMDBApi\LocalModel\bin\Debug\netcoreapp3.1\DAL.pdb
 C:\Users\Steve\source\repos\IMDBApi\LocalModel\bin\Debug\netcoreapp3.1\ADOToolbox.pdb
 C:\Users\Steve\source\repos\IMDBApi\LocalModel\obj\Debug\netcoreapp3.1\LocalModel.csproj.CopyComplete
+C:\Users\Steve\source\repos\IMDBApi\LocalModel\obj\Debug\netcoreapp3.1\LocalModel.csproj.AssemblyReference.cache
+C:\Users\Steve\source\Perso\IMDBApi\LocalModel\bin\Debug\netcoreapp3.1\LocalModel.deps.json
+C:\Users\Steve\source\Perso\IMDBApi\LocalModel\bin\Debug\netcoreapp3.1\LocalModel.dll
+C:\Users\Steve\source\Perso\IMDBApi\LocalModel\bin\Debug\netcoreapp3.1\LocalModel.pdb
+C:\Users\Steve\source\Perso\IMDBApi\LocalModel\bin\Debug\netcoreapp3.1\ADOToolbox.dll
+C:\Users\Steve\source\Perso\IMDBApi\LocalModel\bin\Debug\netcoreapp3.1\DAL.dll
+C:\Users\Steve\source\Perso\IMDBApi\LocalModel\bin\Debug\netcoreapp3.1\DAL.pdb
+C:\Users\Steve\source\Perso\IMDBApi\LocalModel\bin\Debug\netcoreapp3.1\ADOToolbox.pdb
+C:\Users\Steve\source\Perso\IMDBApi\LocalModel\obj\Debug\netcoreapp3.1\LocalModel.csproj.AssemblyReference.cache
+C:\Users\Steve\source\Perso\IMDBApi\LocalModel\obj\Debug\netcoreapp3.1\LocalModel.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Steve\source\Perso\IMDBApi\LocalModel\obj\Debug\netcoreapp3.1\LocalModel.AssemblyInfoInputs.cache
+C:\Users\Steve\source\Perso\IMDBApi\LocalModel\obj\Debug\netcoreapp3.1\LocalModel.AssemblyInfo.cs
+C:\Users\Steve\source\Perso\IMDBApi\LocalModel\obj\Debug\netcoreapp3.1\LocalModel.csproj.CoreCompileInputs.cache
+C:\Users\Steve\source\Perso\IMDBApi\LocalModel\obj\Debug\netcoreapp3.1\LocalModel.csproj.CopyComplete
+C:\Users\Steve\source\Perso\IMDBApi\LocalModel\obj\Debug\netcoreapp3.1\LocalModel.dll
+C:\Users\Steve\source\Perso\IMDBApi\LocalModel\obj\Debug\netcoreapp3.1\LocalModel.pdb

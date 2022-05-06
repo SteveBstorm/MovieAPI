@@ -22,6 +22,8 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.AspNetCore.Identity;
 using System.Security.Claims;
+using System.Security.Permissions;
+using Microsoft.Extensions.FileProviders;
 
 namespace IMDBApi
 {
@@ -71,7 +73,7 @@ namespace IMDBApi
                     Contact = new Microsoft.OpenApi.Models.OpenApiContact
                     {
                         Email = "steve.lorent@bstorm.be",
-                        Name = "FS.NET"
+                        Name = "Steve"
                     }
                 });
             });
@@ -106,13 +108,15 @@ namespace IMDBApi
                 {
                     ValidateIssuerSigningKey = true,
                     IssuerSigningKey = new SymmetricSecurityKey(key),
-                    ValidateIssuer = false,
-                    ValidateAudience = false
+                    ValidateIssuer = true,
+                    ValidIssuer = "http://localhost:53448",
+                    ValidateAudience = false,
+                    ValidateLifetime = true
                 };
             });
 
             services.AddScoped<ITokenService, TokenService>();
-
+            
             #endregion
 
 
@@ -139,6 +143,12 @@ namespace IMDBApi
             });
 
             app.UseSwagger();
+            //app.UseStaticFiles(new StaticFileOptions
+            //{
+            //    FileProvider = new PhysicalFileProvider(
+            //    Path.Combine(env.ContentRootPath, "image")),
+            //    RequestPath = "/image"
+            //});
             app.UseSwaggerUI(c =>
             {
                 c.DisplayOperationId();

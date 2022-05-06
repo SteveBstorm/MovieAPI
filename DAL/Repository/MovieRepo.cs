@@ -100,21 +100,21 @@ namespace DAL.Repository
             }
         }
 
-        public void Insert(Movie m)
+        public int Insert(Movie m)
         {
             using (SqlConnection c = Connection())
             {
                 using (SqlCommand cmd = c.CreateCommand())
                 {
                     c.Open();
-                    cmd.CommandText = "INSERT INTO Movie VALUES (@title, @description, @ReleaseYear, @RealisatorID, @ScenaristID)";
+                    cmd.CommandText = "INSERT INTO Movie OUTPUT inserted.Id VALUES (@title, @description, @ReleaseYear, @RealisatorID, @ScenaristID)";
                     cmd.Parameters.AddWithValue("title", m.Title);
                     cmd.Parameters.AddWithValue("description", m.Description);
                     cmd.Parameters.AddWithValue("ReleaseYear", m.ReleaseYear);
                     cmd.Parameters.AddWithValue("RealisatorID", m.RealisatorID);
                     cmd.Parameters.AddWithValue("ScenaristID", m.ScenaristID);
 
-                    cmd.ExecuteNonQuery();
+                    return (int)cmd.ExecuteScalar();
                 }
             }
         }
