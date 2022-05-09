@@ -1,24 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Steve\\source\\Perso\\IMDBApi\\ADOToolbox\\ADOToolbox.csproj": {}
+    "C:\\Users\\elean\\source\\repos\\MovieAPI\\ADOToolbox\\ADOToolbox.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Steve\\source\\Perso\\IMDBApi\\ADOToolbox\\ADOToolbox.csproj": {
+    "C:\\Users\\elean\\source\\repos\\MovieAPI\\ADOToolbox\\ADOToolbox.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Steve\\source\\Perso\\IMDBApi\\ADOToolbox\\ADOToolbox.csproj",
+        "projectUniqueName": "C:\\Users\\elean\\source\\repos\\MovieAPI\\ADOToolbox\\ADOToolbox.csproj",
         "projectName": "ADOToolbox",
-        "projectPath": "C:\\Users\\Steve\\source\\Perso\\IMDBApi\\ADOToolbox\\ADOToolbox.csproj",
-        "packagesPath": "C:\\Users\\Steve\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Steve\\source\\Perso\\IMDBApi\\ADOToolbox\\obj\\",
+        "projectPath": "C:\\Users\\elean\\source\\repos\\MovieAPI\\ADOToolbox\\ADOToolbox.csproj",
+        "packagesPath": "C:\\Users\\elean\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\elean\\source\\repos\\MovieAPI\\ADOToolbox\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Steve\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\elean\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],

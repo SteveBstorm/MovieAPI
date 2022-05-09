@@ -26,3 +26,13 @@ C:\Users\Steve\source\Perso\IMDBApi\ADOToolbox\obj\Debug\netcoreapp3.1\ADOToolbo
 C:\Users\Steve\source\Perso\IMDBApi\ADOToolbox\obj\Debug\netcoreapp3.1\ADOToolbox.csproj.CoreCompileInputs.cache
 C:\Users\Steve\source\Perso\IMDBApi\ADOToolbox\obj\Debug\netcoreapp3.1\ADOToolbox.dll
 C:\Users\Steve\source\Perso\IMDBApi\ADOToolbox\obj\Debug\netcoreapp3.1\ADOToolbox.pdb
+C:\Users\elean\source\repos\MovieAPI\ADOToolbox\bin\Debug\netcoreapp3.1\ADOToolbox.deps.json
+C:\Users\elean\source\repos\MovieAPI\ADOToolbox\bin\Debug\netcoreapp3.1\ADOToolbox.dll
+C:\Users\elean\source\repos\MovieAPI\ADOToolbox\bin\Debug\netcoreapp3.1\ADOToolbox.pdb
+C:\Users\elean\source\repos\MovieAPI\ADOToolbox\obj\Debug\netcoreapp3.1\ADOToolbox.csproj.AssemblyReference.cache
+C:\Users\elean\source\repos\MovieAPI\ADOToolbox\obj\Debug\netcoreapp3.1\ADOToolbox.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\elean\source\repos\MovieAPI\ADOToolbox\obj\Debug\netcoreapp3.1\ADOToolbox.AssemblyInfoInputs.cache
+C:\Users\elean\source\repos\MovieAPI\ADOToolbox\obj\Debug\netcoreapp3.1\ADOToolbox.AssemblyInfo.cs
+C:\Users\elean\source\repos\MovieAPI\ADOToolbox\obj\Debug\netcoreapp3.1\ADOToolbox.csproj.CoreCompileInputs.cache
+C:\Users\elean\source\repos\MovieAPI\ADOToolbox\obj\Debug\netcoreapp3.1\ADOToolbox.dll
+C:\Users\elean\source\repos\MovieAPI\ADOToolbox\obj\Debug\netcoreapp3.1\ADOToolbox.pdb

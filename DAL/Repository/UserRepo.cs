@@ -95,7 +95,7 @@ namespace DAL.Repository
 
         public void Update(User u)
         {
-            string query = "UPDATE [User] SET Email = @email, Password = @password, FirstName = @firstName, LastName = @lastName, BirthDate = @birthDate" +
+            string query = "UPDATE [User] SET Email = @email, Password = @password, FisrtName = @firstName, LastName = @lastName, BirthDate = @birthDate" +
                 " WHERE Id = @Id";
             Command cmd = new Command(query);
             cmd.AddParameter("email", u.Email);

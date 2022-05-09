@@ -1,24 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Steve\\source\\Perso\\IMDBApi\\LocalModel\\LocalModel.csproj": {}
+    "C:\\Users\\elean\\source\\repos\\MovieAPI\\LocalModel\\LocalModel.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Steve\\source\\Perso\\IMDBApi\\ADOToolbox\\ADOToolbox.csproj": {
+    "C:\\Users\\elean\\source\\repos\\MovieAPI\\ADOToolbox\\ADOToolbox.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Steve\\source\\Perso\\IMDBApi\\ADOToolbox\\ADOToolbox.csproj",
+        "projectUniqueName": "C:\\Users\\elean\\source\\repos\\MovieAPI\\ADOToolbox\\ADOToolbox.csproj",
         "projectName": "ADOToolbox",
-        "projectPath": "C:\\Users\\Steve\\source\\Perso\\IMDBApi\\ADOToolbox\\ADOToolbox.csproj",
-        "packagesPath": "C:\\Users\\Steve\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Steve\\source\\Perso\\IMDBApi\\ADOToolbox\\obj\\",
+        "projectPath": "C:\\Users\\elean\\source\\repos\\MovieAPI\\ADOToolbox\\ADOToolbox.csproj",
+        "packagesPath": "C:\\Users\\elean\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\elean\\source\\repos\\MovieAPI\\ADOToolbox\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Steve\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\elean\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -69,21 +68,20 @@
         }
       }
     },
-    "C:\\Users\\Steve\\source\\Perso\\IMDBApi\\DAL\\DAL.csproj": {
+    "C:\\Users\\elean\\source\\repos\\MovieAPI\\DAL\\DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Steve\\source\\Perso\\IMDBApi\\DAL\\DAL.csproj",
+        "projectUniqueName": "C:\\Users\\elean\\source\\repos\\MovieAPI\\DAL\\DAL.csproj",
         "projectName": "DAL",
-        "projectPath": "C:\\Users\\Steve\\source\\Perso\\IMDBApi\\DAL\\DAL.csproj",
-        "packagesPath": "C:\\Users\\Steve\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Steve\\source\\Perso\\IMDBApi\\DAL\\obj\\",
+        "projectPath": "C:\\Users\\elean\\source\\repos\\MovieAPI\\DAL\\DAL.csproj",
+        "packagesPath": "C:\\Users\\elean\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\elean\\source\\repos\\MovieAPI\\DAL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Steve\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\elean\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -98,8 +96,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\Steve\\source\\Perso\\IMDBApi\\ADOToolbox\\ADOToolbox.csproj": {
-                "projectPath": "C:\\Users\\Steve\\source\\Perso\\IMDBApi\\ADOToolbox\\ADOToolbox.csproj"
+              "C:\\Users\\elean\\source\\repos\\MovieAPI\\ADOToolbox\\ADOToolbox.csproj": {
+                "projectPath": "C:\\Users\\elean\\source\\repos\\MovieAPI\\ADOToolbox\\ADOToolbox.csproj"
               }
             }
           }
@@ -142,21 +140,20 @@
         }
       }
     },
-    "C:\\Users\\Steve\\source\\Perso\\IMDBApi\\LocalModel\\LocalModel.csproj": {
+    "C:\\Users\\elean\\source\\repos\\MovieAPI\\LocalModel\\LocalModel.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Steve\\source\\Perso\\IMDBApi\\LocalModel\\LocalModel.csproj",
+        "projectUniqueName": "C:\\Users\\elean\\source\\repos\\MovieAPI\\LocalModel\\LocalModel.csproj",
         "projectName": "LocalModel",
-        "projectPath": "C:\\Users\\Steve\\source\\Perso\\IMDBApi\\LocalModel\\LocalModel.csproj",
-        "packagesPath": "C:\\Users\\Steve\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Steve\\source\\Perso\\IMDBApi\\LocalModel\\obj\\",
+        "projectPath": "C:\\Users\\elean\\source\\repos\\MovieAPI\\LocalModel\\LocalModel.csproj",
+        "packagesPath": "C:\\Users\\elean\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\elean\\source\\repos\\MovieAPI\\LocalModel\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Steve\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\elean\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -171,8 +168,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\Steve\\source\\Perso\\IMDBApi\\DAL\\DAL.csproj": {
-                "projectPath": "C:\\Users\\Steve\\source\\Perso\\IMDBApi\\DAL\\DAL.csproj"
+              "C:\\Users\\elean\\source\\repos\\MovieAPI\\DAL\\DAL.csproj": {
+                "projectPath": "C:\\Users\\elean\\source\\repos\\MovieAPI\\DAL\\DAL.csproj"
               }
             }
           }

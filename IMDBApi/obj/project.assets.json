@@ -7039,25 +7039,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Steve\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\elean\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Steve\\source\\Perso\\IMDBApi\\IMDBApi\\IMDBApi.csproj",
+      "projectUniqueName": "C:\\Users\\elean\\source\\repos\\MovieAPI\\IMDBApi\\IMDBApi.csproj",
       "projectName": "IMDBApi",
-      "projectPath": "C:\\Users\\Steve\\source\\Perso\\IMDBApi\\IMDBApi\\IMDBApi.csproj",
-      "packagesPath": "C:\\Users\\Steve\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Steve\\source\\Perso\\IMDBApi\\IMDBApi\\obj\\",
+      "projectPath": "C:\\Users\\elean\\source\\repos\\MovieAPI\\IMDBApi\\IMDBApi.csproj",
+      "packagesPath": "C:\\Users\\elean\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\elean\\source\\repos\\MovieAPI\\IMDBApi\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Steve\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\elean\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -7072,8 +7070,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\Steve\\source\\Perso\\IMDBApi\\LocalModel\\LocalModel.csproj": {
-              "projectPath": "C:\\Users\\Steve\\source\\Perso\\IMDBApi\\LocalModel\\LocalModel.csproj"
+            "C:\\Users\\elean\\source\\repos\\MovieAPI\\LocalModel\\LocalModel.csproj": {
+              "projectPath": "C:\\Users\\elean\\source\\repos\\MovieAPI\\LocalModel\\LocalModel.csproj"
             }
           }
         }
